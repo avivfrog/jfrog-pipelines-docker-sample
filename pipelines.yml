@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: art                                # <-- replace with your artifactory integration
       sourceRepository: docker-l               # <-- required if registry is Artifactory
-      imageName: https://vinay12.jfrog.io/artifactory/docker-l/ubuntu  # < -- replace with your image path and name
+      imageName: vinay12.jfrog.io/artifactory/docker-l/ubuntu  # < -- replace with your image path and name
       imageTag: latest
       autoPull: true
       
@@ -40,7 +40,7 @@ pipelines:
           affinityGroup: dbp_group
           dockerFileLocation: .
           dockerFileName: Dockerfile
-          dockerImageName: https://vinay12.jfrog.io/artifactory/docker-l/ubuntu  # replace with your image path and name
+          dockerImageName: vinay12.jfrog.io/artifactory/docker-l/ubuntu  # replace with your image path and name
           dockerImageTag: ${run_number}
           inputResources:
             - name: dbp_repo
