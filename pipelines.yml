@@ -12,7 +12,7 @@ resources:
     configuration:
       registry: art                                # <-- replace with your artifactory integration
       sourceRepository: docker-l               # <-- required if registry is Artifactory
-      imageName: vinay12.jfrog.io/artifactory/docker-l/ubuntu  # < -- replace with your image path and name
+      imageName: vinay12.jfrog.io/docker-l/ubuntu  # < -- replace with your image path and name
       imageTag: latest
       autoPull: true
       
